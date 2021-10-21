@@ -1,0 +1,25 @@
+name: Continuous deploy
+
+on:
+  push:
+    branches: [$default-branch]
+  pull_request:
+    branches: [$default-branch]
+
+jobs:
+  serverless-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: get repo
+        uses: actions/checkout@v2
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.S3_USER_AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.S3_USER_SECRET_ACCESS_KEY }}
+          aws-region: us-east-2
+      - name: Push to S3
+        run: >
+          aws s3 sync . s3://assets.michaelfortunato.org --recursive 
+          --exclude "*" 
+          --include "blogs/*" --include "assets/*" --include "metadata.yaml"

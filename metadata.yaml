@@ -1,0 +1,5 @@
+build_settings: 
+  blogs: 
+    number_of_blogs: 20
+    blog_ids: 
+      - "1"
