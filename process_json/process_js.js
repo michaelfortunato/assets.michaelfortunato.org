@@ -8,7 +8,7 @@ Object.entries(boxes).forEach(([group, boxes]) => {
 		let scrapedObj = {};
 		Object.entries(obj).forEach(([k, v]) => {
 			if (k !== "title" && k !== "body") {
-				scrapedObj[k] = v.toString().replace(/[\s\t]/g, "");
+				scrapedObj[k] = v.toString().replace(/\t/g, "").replace(/\s/g, ",");
 			}
 		});
 		return scrapedObj;
