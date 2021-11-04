@@ -7,7 +7,6 @@ ld: M1659.5,228.7,1399.8,228.7,1250,343.2,913,339.9,
 ad: M849.2,339.2c30-11.3,67.5-30.7,90.7-51.4l-18.6,52.1l17.7,52.5C916.1,371.3,879.1,351.1,849.2,339.2z
 imageUrl: 
 ---
-
 # My early life
 My mom had chinese food when I was born. 
 Food is really important in our family.
