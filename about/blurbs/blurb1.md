@@ -1,7 +1,13 @@
+---one
+id: "Main-0",
+key: "Main-0",
+title: Blurb2
+x: 3,
+y: 4,
+cd: "M1677.9,228.7c0,9.4-7.3,17-16.3,17c-9,0-16.3-7.6-16.3-17s7.3-17,16.3-17l0,0C1670.6,211.7,1677.9,219.4,1677.9,228.7z",
+ld: "M1659.5,228.7 1399.8,228.7 1250,343.2 913,339.9 			",
+ad: "M849.2,339.2c30-11.3,67.5-30.7,90.7-51.4l-18.6,52.1l17.7,52.5C916.1,371.3,879.1,351.1,849.2,339.2z",
 ---
-title: Blurb1
-description: The first blurb
+# I was born
+---two
 ---
-
-# Here is a blurb
-On this day I was born. I was not so bad. How do I do columns in markdown? Lol
