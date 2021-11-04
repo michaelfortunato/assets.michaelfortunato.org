@@ -22,4 +22,7 @@ jobs:
         run: >
           aws s3 sync . s3://assets.michaelfortunato.org 
           --exclude "*" 
-          --include "blogs/*" --include "assets/*" --include "metadata.yaml"
+          --include "about/*"
+          --include "blogs/*" 
+          --include "assets/*" 
+          --include "metadata.yaml"
